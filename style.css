@@ -1,0 +1,179 @@
+/* GENERAL */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+
+p {
+  margin: 0 0 1rem;
+}
+
+h1 {
+  margin: 0 0 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  margin: 0 0 1rem;
+  letter-spacing: 1px;
+  text-align: center;
+
+}
+
+
+
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+.conteneur-cv {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "left-column right-column right-column";
+  width: 900px;
+  margin: 100px auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.section {
+  margin-bottom: 1.5rem;
+}
+
+
+/* LEFT COLUMN */
+.colonne-gauche {
+  grid-area: left-column;
+  padding: 50px;
+  background-color: #F1956D;
+  color: white;
+}
+
+.infos {
+  columns: 1;
+  list-style-type: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+
+.competences {
+  list-style-type: square;
+  padding: 0;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin: 0 0 1rem;
+}
+
+span.fr {
+  border-style: solid;
+  margin: 12px;
+  padding-right: 200px;
+  background-color: #f5f1f1f3;
+  border-radius: 5px;
+}
+
+span.b {
+  border-style: solid;
+  margin: 8px;
+  padding-right: 170px;
+  background-color: #f5f1f1f3;
+  border-radius: 5px;
+}
+
+span.an {
+  border-style: solid;
+  margin: 19px;
+  padding-right: 120px;
+  background-color: #f5f1f1f3;
+  border-radius: 5px;
+}
+
+.ln {
+  font-size: 18px;
+}
+
+/* RIGHT COLUMN */
+.colonne-droite {
+  grid-area: right-column;
+  display: grid;
+  grid-template-rows: 200px 1fr;
+  grid-template-areas:
+    "header"
+    "content";
+}
+
+.ref {
+  font-size: 16px;
+
+}
+
+
+/* HEADER */
+.header {
+  grid-area: header;
+  padding: 50px;
+  background-color: #f5f1f1f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.noms {
+  color: #F1956D;
+}
+
+.fct {
+  color: #F1956D;
+  font-size: 22px;
+  font-weight: bold;
+
+}
+
+
+
+/* CONTENT */
+.contenu {
+  grid-area: content;
+  padding: 50px;
+}
+
+h2.bord {
+  border-style: solid;
+  background-color: #F1956D;
+  color: #f2f2f2;
+
+}
+
+.experience-list {
+  list-style-type: circle;
+  font-size: 16px;
+}
+
+.etudes {
+  list-style-type: square;
+  padding: 0;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+
+@media screen and (max-width:992px) {
+  .conteneur-cv{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+}
