@@ -171,9 +171,9 @@ h2.bord {
 
 
 @media screen and (max-width:992px) {
-  .conteneur-cv{
+  .conteneur-cv {
     display: flex;
     flex-direction: column-reverse;
   }
-  
+
 }
