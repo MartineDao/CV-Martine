@@ -9,9 +9,7 @@ body {
   font-weight: 300;
   font-size: 0.9rem;
   line-height: 1.5;
-  overflow-x: hidden;
 }
-
 
 p {
   margin: 0 0 1rem;
@@ -27,11 +25,8 @@ h2 {
   margin: 0 0 1rem;
   letter-spacing: 1px;
   text-align: center;
-
+  text-transform: uppercase;
 }
-
-
-
 
 .icon {
   margin-right: 0.5rem;
@@ -41,9 +36,9 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "left-column right-column right-column";
-  width: 900px;
+  width: 1000px;
   margin: 100px auto;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 5px gray;
 }
 
 .section {
@@ -59,13 +54,21 @@ h2 {
   color: white;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .infos {
-  columns: 1;
   list-style-type: none;
   padding: 0;
   font-size: 16px;
 }
-
 
 .competences {
   list-style-type: square;
@@ -102,6 +105,7 @@ span.an {
 .ln {
   font-size: 18px;
 }
+
 
 /* RIGHT COLUMN */
 .colonne-droite {
@@ -142,7 +146,6 @@ span.an {
 }
 
 
-
 /* CONTENT */
 .contenu {
   grid-area: content;
@@ -170,10 +173,10 @@ h2.bord {
 }
 
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:901px) {
   .conteneur-cv {
     display: flex;
     flex-direction: column-reverse;
+    width: auto;
   }
-
 }
