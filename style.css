@@ -21,7 +21,9 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-h2 {
+.section-label {
+  font-size: 21.6px;
+  font-weight: bold;
   margin: 0 0 1rem;
   letter-spacing: 1px;
   text-align: center;
@@ -41,7 +43,7 @@ h2 {
   box-shadow: 0 1px 5px gray;
 }
 
-.section {
+section {
   margin-bottom: 1.5rem;
 }
 
@@ -119,7 +121,6 @@ span.an {
 
 .ref {
   font-size: 16px;
-
 }
 
 
@@ -152,7 +153,7 @@ span.an {
   padding: 50px;
 }
 
-h2.bord {
+div.bord {
   border-style: solid;
   background-color: #F1956D;
   color: #f2f2f2;
