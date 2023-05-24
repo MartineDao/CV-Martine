@@ -22,8 +22,6 @@ h1 {
 }
 
 .section-label {
-  font-size: 21.6px;
-  font-weight: bold;
   margin: 0 0 1rem;
   letter-spacing: 1px;
   text-align: center;
@@ -43,7 +41,7 @@ h1 {
   box-shadow: 0 1px 5px gray;
 }
 
-section {
+.mb {
   margin-bottom: 1.5rem;
 }
 
@@ -51,7 +49,7 @@ section {
 /* LEFT COLUMN */
 .colonne-gauche {
   grid-area: left-column;
-  padding: 50px;
+  padding: 40px;
   background-color: #F1956D;
   color: white;
 }
@@ -153,7 +151,7 @@ span.an {
   padding: 50px;
 }
 
-div.bord {
+.bord {
   border-style: solid;
   background-color: #F1956D;
   color: #f2f2f2;
