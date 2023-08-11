@@ -36,7 +36,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "left-column right-column right-column";
-  width: 1000px;
+  width: 1100px;
   margin: 100px auto;
   box-shadow: 0 1px 5px gray;
 }
@@ -171,8 +171,15 @@ span.an {
   margin-bottom: 1.5rem;
 }
 
+/* RESPONSIVITE */
+@media screen and (min-width:850px) and (max-width:1100px) {
+  .conteneur-cv {
+    display: flex;
+    width: auto;
+  }
+}
 
-@media screen and (max-width:901px) {
+@media screen and (max-width:850px) {
   .conteneur-cv {
     display: flex;
     flex-direction: column-reverse;
